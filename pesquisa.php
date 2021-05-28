@@ -31,7 +31,7 @@ $possuem_o_termo = array();
 include_once('perguntas.php');
 
 foreach($perguntas as $key => $cada_valor){
-    $pos = strpos($cada_valor, $termo);
+    $pos = strpos(strtolower($cada_valor), strtolower($termo));
     if($pos != false){
         array_push($possuem_o_termo, $key);
         $qnt_resultado++;
