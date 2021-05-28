@@ -5,7 +5,13 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style: none;
 }
+
+body{
+    background-color: #f7f8fa;
+}
+
 a{
     padding: 20px 0px;
     padding-left: 20px;
@@ -24,7 +30,7 @@ aside{
     max-width: 35%;
     height: 100vh;
     position: fixed;
-    background: rgb(138,43,226);
+    background-color: rgb(138,43,226);
    /* background: linear-gradient(180deg, rgba(138,43,226,1) 64%, rgba(197,178,255,1) 100%);*/
     box-shadow: 7px 0px 7px -2px #a5a4a4;
 }
@@ -33,6 +39,7 @@ article{
     width: 60%;
     margin-left: auto;
     padding-right: 2%;
+    text-align:justify;
 }
 #r0{
     padding-top: 30px;
@@ -58,4 +65,107 @@ img{
 h3{
     padding-top: 10px;
     color:rgb(122, 119, 119);
+}
+
+/*------------------ PAGINA DE PESQUISA ----------------*/
+
+header{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+}
+
+.pesquisa main{
+    width:60%;
+    margin: 0 auto;
+}
+
+.pesquisa .cada_resposta{
+    background-color: #fff;
+    box-shadow: 0px 0px 7px rgba(136, 135, 135, 0.3);
+    margin: 30px 0;
+    padding: 20px 15px;
+}
+
+.pesquisa .cada_resposta img{
+    max-width: 700px;
+}
+
+form{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+form input{
+    border: none;
+    width: 75%;
+    height: 50px;
+    border-radius: 0;
+    padding-left: 25px;
+    border: 1px solid rgb(238, 236, 236);
+    border-left: none;
+    box-sizing: border-box;
+    font-size: 18px;
+    color:rgb(122, 119, 119);
+}
+
+form button{
+    background-color: #fff;
+    border: none;
+    padding-left: 20px;
+    border-radius: 4px 0px 0px 4px;
+    height: 50px;
+    border: 1px solid rgb(240, 238, 238);
+    border-right: none;
+
+}
+
+form button img{
+    width: 20px;
+}
+
+input:focus, button:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+} 
+
+.pesquisa form{
+    margin: 10px 0 30px;
+}
+
+h5{
+    font-weight: bolder;
+    font-size: 0.9rem;
+}
+
+.main-btn{
+    padding: 0px;
+    border: none;
+    margin: 0px;
+    display: inline-block;
+    width: 25% !important;
+    text-align: center;
+    background-color: rgb(138,43,226);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 0px 8px 8px 0;
+    color: #fff;
+    font-size:1.1rem;
+}
+
+.main-btn:hover{
+    cursor: pointer;
+    background-color: rgb(191, 138, 240);
+}
+
+header a{
+    background-color: rgb(138,43,226);
+}
+
+header a:hover{
+    text-decoration: underline;
 }
